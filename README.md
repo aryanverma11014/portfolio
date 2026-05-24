@@ -4,7 +4,7 @@ Personal portfolio website showcasing my projects, skills, and journey as a Back
 
 ## Live Demo
 
-🌐 Portfolio: https://your-portfolio-url.vercel.app
+🌐 Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/
 
 ## About
 
@@ -38,7 +38,7 @@ npm run dev
 ## Connect With Me
 
 - GitHub: https://github.com/aryanverma11014
-- Portfolio: https://your-portfolio-url.vercel.app
+- Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/
 
 ---
 ⭐ If you like the project, feel free to star the repository.
