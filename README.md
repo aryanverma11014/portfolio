@@ -38,7 +38,7 @@ npm run dev
 ## Connect With Me
 
 - GitHub: https://github.com/aryanverma11014
-- Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/
+- Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/ still in development
 
 ---
 ⭐ If you like the project, feel free to star the repository.
