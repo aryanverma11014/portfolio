@@ -27,6 +27,7 @@ export const navItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Resume", href: "#resume" },
   { label: "GitHub", href: "#github" },
   { label: "Contact", href: "#contact" }
 ];
@@ -142,3 +143,40 @@ export const githubHighlights = [
   { label: "Total Repositories", value: "Growing project base", icon: Layers3 },
   { label: "Most Used Languages", value: "TypeScript, JavaScript", icon: ShieldCheck }
 ];
+
+export const resumeData = {
+  education: [
+    {
+      degree: "Bachelor's in Computer Science",
+      institution: "Your University",
+      year: "2024",
+      description: "Strong foundation in algorithms, data structures, and software engineering principles."
+    }
+  ],
+  experience: [
+    {
+      role: "Backend Developer",
+      company: "Self-Employed",
+      year: "2024 - Present",
+      description: "Building production-ready APIs, REST services, and backend systems with Node.js, Express, and TypeScript."
+    },
+    {
+      role: "Full Stack Developer",
+      company: "Learning Projects",
+      year: "2023 - 2024",
+      description: "Developed multiple full-stack projects with authentication, databases, and modern web technologies."
+    }
+  ],
+  certifications: [
+    {
+      title: "JavaScript & Node.js Mastery",
+      issuer: "Self-Directed Learning",
+      year: "2024"
+    },
+    {
+      title: "TypeScript Advanced Patterns",
+      issuer: "Self-Directed Learning",
+      year: "2024"
+    }
+  ]
+};

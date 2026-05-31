@@ -6,6 +6,7 @@ import { Experience } from "@/components/sections/experience";
 import { GitHubSection } from "@/components/sections/github";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
+import { Resume } from "@/components/sections/resume";
 import { Skills } from "@/components/sections/skills";
 
 export default function Home() {
