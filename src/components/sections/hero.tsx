@@ -41,7 +41,7 @@ export function Hero() {
             <Button href="#projects">
               View Projects <ArrowDown size={17} />
             </Button>
-            <Button href="/resume.pdf" variant="secondary">
+            <Button href="/resume.pdf" variant="secondary" download>
               Download Resume <Download size={17} />
             </Button>
             <Button href="#contact" variant="ghost">
