@@ -30,16 +30,27 @@ export function ContactForm() {
         }
       });
 
-      const data = (await response.json()) as { message?: string };
+      const data = (await response.json()) as {
+        mailtoUrl?: string;
+        message?: string;
+      };
 
       if (!response.ok) {
         throw new Error(data.message ?? "Something went wrong.");
       }
 
+      if (!data.mailtoUrl) {
+        throw new Error("Unable to prepare the email message.");
+      }
+
+      window.location.href = data.mailtoUrl;
+
       form.reset();
       setFormState({
         status: "success",
-        message: data.message ?? "Message sent successfully."
+        message:
+          data.message ??
+          "Your email app is ready with the message addressed to Aryan."
       });
     } catch (error) {
       setFormState({
@@ -102,7 +113,7 @@ export function ContactForm() {
         className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-70"
       >
         <Send size={17} />
-        {formState.status === "loading" ? "Sending..." : "Send Message"}
+        {formState.status === "loading" ? "Preparing..." : "Send Email"}
       </button>
       {formState.message ? (
         <p

@@ -4,7 +4,7 @@ Personal portfolio website showcasing my projects, skills, and journey as a Back
 
 ## Live Demo
 
-🌐 Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/
+Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/
 
 ## About
 
@@ -25,7 +25,7 @@ I am an aspiring Backend Developer passionate about building scalable APIs, auth
 - Dark/Light Mode
 - Project Showcase
 - Skills Section
-- Contact Form
+- Contact Form that opens a prefilled email to `aryanverma11014@gmail.com`
 - SEO Optimized
 
 ## Run Locally
@@ -38,7 +38,9 @@ npm run dev
 ## Connect With Me
 
 - GitHub: https://github.com/aryanverma11014
+- Email: aryanverma11014@gmail.com
 - Portfolio: https://portfolio-ef1ks9kgm-aryanverma11014s-projects.vercel.app/ still in development
 
 ---
-⭐ If you like the project, feel free to star the repository.
+
+If you like the project, feel free to star the repository.

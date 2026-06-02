@@ -6,8 +6,22 @@ type ContactPayload = {
   message?: unknown;
 };
 
+const contactEmail = "aryanverma11014@gmail.com";
+
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function createMailtoUrl(name: string, email: string, message: string) {
+  const subject = `Portfolio message from ${name}`;
+  const body = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    "",
+    message
+  ].join("\n");
+
+  return `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 export async function POST(request: Request) {
@@ -48,15 +62,8 @@ export async function POST(request: Request) {
     );
   }
 
-  // Replace this with an email provider, database write, or CRM webhook.
-  console.info("New portfolio contact message", {
-    name,
-    email,
-    message,
-    receivedAt: new Date().toISOString()
-  });
-
   return NextResponse.json({
-    message: "Thanks for reaching out. I’ll get back to you soon."
+    mailtoUrl: createMailtoUrl(name, email, message),
+    message: "Your email app is ready with the message addressed to Aryan."
   });
 }

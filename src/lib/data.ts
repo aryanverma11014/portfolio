@@ -19,7 +19,7 @@ export const profile = {
   location: "India",
   github: "https://github.com/aryanverma11014",
   linkedin: "https://www.linkedin.com/in/aryan-verma/",
-  email: "aryan.verma@example.com"
+  email: "aryanverma11014@gmail.com"
 };
 
 export const navItems: NavItem[] = [
