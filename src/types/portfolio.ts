@@ -14,9 +14,12 @@ export type SkillGroup = {
 export type Project = {
   title: string;
   description: string;
+  outcome: string;
+  status: string;
   features: string[];
   tech: string[];
-  liveUrl: string;
+  liveUrl?: string;
+  readmeUrl?: string;
   githubUrl: string;
 };
 
